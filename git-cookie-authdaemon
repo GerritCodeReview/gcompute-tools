@@ -20,9 +20,25 @@ import urllib2
 REFRESH = 25  # seconds remaining when starting refresh
 RETRY_INTERVAL = 5 # seconds between retrying a failed refresh
 
-A = 'http://metadata/0.1/meta-data/service-accounts/default/acquire'
-S = 'https://www.googleapis.com/auth/gerritcodereview'
+M = 'http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/'
+SUPPORTED_SCOPES = [
+  'https://www.googleapis.com/auth/gerritcodereview',
+  'https://www.googleapis.com/auth/source.full_control',
+  'https://www.googleapis.com/auth/source.read_write',
+  'https://www.googleapis.com/auth/source.read_only',
+]
 COOKIE_JAR = None
+
+def select_scope():
+  req = urllib2.Request(M + 'scopes')
+  req.add_header('Metadata-Flavor', 'Google')
+  with contextlib.closing(urllib2.urlopen(req)) as scopes:
+    avail = set(scopes.split())
+  scopes = [s for s in SUPPORTED_SCOPES if s in avail]
+  if scopes:
+    return iter(scopes).next()
+  print 'VM must have one of these scopes:\n%s\n' % ('\n'.join(SUPPORTED_SCOPES))
+  sys.exit(1)
 
 def configure_git():
   global COOKIE_JAR
@@ -39,18 +55,18 @@ def configure_git():
     'http.cookiefile', COOKIE_JAR
   ])
 
-def acquire_token(retry):
+def acquire_token(scope, retry):
   while True:
     try:
-      with contextlib.closing(urllib2.urlopen(A + '?scopes=' + S)) as token:
+      with contextlib.closing(urllib2.urlopen(M + 'token?scopes=' + scope)) as token:
         return json.load(token)
     except urllib2.URLError:
       if not retry:
         raise
     time.sleep(RETRY_INTERVAL)
 
-def update_cookie(retry):
-  token = acquire_token(retry)
+def update_cookie(scope, retry):
+  token = acquire_token(scope, retry)
   expires = token['expiresAt']
   access_token = token['accessToken']
 
@@ -103,7 +119,7 @@ def cleanup():
       if os.path.exists(p):
         os.remove(p)
 
-def refresh_loop(expires):
+def refresh_loop(scope, expires):
   atexit.register(cleanup)
   expires = expires - REFRESH
   while True:
@@ -112,11 +128,12 @@ def refresh_loop(expires):
     while now < expires:
       time.sleep(expires - now)
       now = time.time()
-    expires = update_cookie(retry=True) - REFRESH
+    expires = update_cookie(scope, retry=True) - REFRESH
 
 def main():
+  scope = select_scope()
   configure_git()
-  expires = update_cookie(retry=False)
+  expires = update_cookie(scope, retry=False)
 
   if '--nofork' not in sys.argv:
     if os.fork() > 0:
@@ -131,7 +148,7 @@ def main():
       print '%s PID %d' % (sys.argv[0], pid)
       sys.exit(0)
 
-  refresh_loop(expires)
+  refresh_loop(scope, expires)
 
 if __name__ == '__main__':
   main()
