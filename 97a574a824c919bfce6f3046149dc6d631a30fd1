@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca1188d6_78233ba7",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-09T10:30:42Z",
+      "side": 1,
+      "message": "drop; or this should use a debug setting.",
+      "range": {
+        "startLine": 68,
+        "startChar": 15,
+        "endLine": 68,
+        "endChar": 16
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "508b56c9_8060728c",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-09T10:30:42Z",
+      "side": 1,
+      "message": "opt: since adding print statements in python is so easy, I would suggest to not do this at all.",
+      "range": {
+        "startLine": 118,
+        "startChar": 8,
+        "endLine": 118,
+        "endChar": 13
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "06a729df_04a14266",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-09T10:30:42Z",
+      "side": 1,
+      "message": "can you capture this in a variable, \n\n  isWindows \u003d  platform.system() \u003d\u003d \u0027Windows\u0027\n\nso you don\u0027t haev to repeat the string constant.",
+      "range": {
+        "startLine": 123,
+        "startChar": 14,
+        "endLine": 123,
+        "endChar": 20
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0258968d_ae4caa4b",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-09T10:30:42Z",
+      "side": 1,
+      "message": "move this to l.160, so you don\u0027t check for --nofork twice",
+      "range": {
+        "startLine": 155,
+        "startChar": 8,
+        "endLine": 155,
+        "endChar": 12
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
