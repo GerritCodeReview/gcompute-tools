@@ -12,6 +12,7 @@ import contextlib
 import cookielib
 import json
 import os
+import platform
 import subprocess
 import sys
 import time
@@ -50,6 +51,7 @@ def configure_git():
 
   dir = os.path.join(os.environ['HOME'], '.git-credential-cache')
   COOKIE_JAR = os.path.join(dir, 'cookie')
+  print 'Cookie file: %s' % COOKIE_JAR
 
   if os.path.exists(dir):
     os.chmod(dir, 0700)
@@ -74,7 +76,7 @@ def update_cookie(scope, retry):
   now = int(time.time())
   token = acquire_token(scope, retry)
   access_token = token['access_token']
-  expires = now + int(token['expires_in'])
+  expires = now + int(token['expires_in'])  # Epoch in sec
 
   tmp_jar = COOKIE_JAR + '.lock'
   cj = cookielib.MozillaCookieJar(tmp_jar)
@@ -99,6 +101,16 @@ def update_cookie(scope, retry):
       rest = None))
 
   cj.save()
+  if '--debug' in sys.argv:
+    print 'Updating %s.' % COOKIE_JAR
+    print 'Expires: %d, %s, in %d seconds'% (
+      expires, time.ctime(expires), expires - now)
+    sys.stdout.flush()
+  if platform.system() == 'Windows':
+    # os.rename() below on Windows will raise OSError when dst exists.
+    # See https://docs.python.org/2/library/os.html#os.rename
+    if os.path.isfile(COOKIE_JAR):
+      os.remove(COOKIE_JAR)
   os.rename(tmp_jar, COOKIE_JAR)
   return expires
 
@@ -122,6 +134,12 @@ def refresh_loop(scope, expires):
 def main():
   scope = select_scope()
   configure_git()
+
+  if platform.system() == 'Windows' and '--nofork' not in sys.argv:
+    # os.fork() is not supported on Windows.
+    print 'Add \'--nofork\' on Windows'
+    sys.exit(1)
+
   expires = update_cookie(scope, retry=False)
 
   if '--nofork' not in sys.argv:
