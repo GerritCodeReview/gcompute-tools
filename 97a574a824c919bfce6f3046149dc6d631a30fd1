@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5ae5a38f_6b73a495",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2017-11-09T20:24:53Z",
+      "side": 1,
+      "message": "Put into debug.",
+      "parentUuid": "ca1188d6_78233ba7",
+      "range": {
+        "startLine": 68,
+        "startChar": 15,
+        "endLine": 68,
+        "endChar": 16
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "508b56c9_8060728c",
         "filename": "git-cookie-authdaemon",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1c0c157_8e50dd9e",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2017-11-09T20:24:53Z",
+      "side": 1,
+      "message": "Debug prints are useful for their convenience. I am afraid many if not most don\u0027t realize this is python and they may not know Python either.",
+      "parentUuid": "508b56c9_8060728c",
+      "range": {
+        "startLine": 118,
+        "startChar": 8,
+        "endLine": 118,
+        "endChar": 13
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "cf1fb65c_332403a0",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2017-11-09T20:24:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "06a729df_04a14266",
+      "range": {
+        "startLine": 123,
+        "startChar": 14,
+        "endLine": 123,
+        "endChar": 20
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0258968d_ae4caa4b",
         "filename": "git-cookie-authdaemon",
         "patchSetId": 2
@@ -91,6 +163,30 @@
       "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21bd3b79_4e0c4553",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2017-11-09T20:24:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0258968d_ae4caa4b",
+      "range": {
+        "startLine": 155,
+        "startChar": 8,
+        "endLine": 155,
+        "endChar": 12
+      },
+      "revId": "97a574a824c919bfce6f3046149dc6d631a30fd1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
