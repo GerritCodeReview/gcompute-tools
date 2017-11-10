@@ -16,6 +16,24 @@
       "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc45ac64_c72d8159",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2017-11-10T19:27:13Z",
+      "side": 1,
+      "message": "Error out if HOMEPATH is not set.",
+      "parentUuid": "eb7f2913_79f967ec",
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
