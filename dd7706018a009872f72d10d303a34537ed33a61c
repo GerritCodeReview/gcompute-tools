@@ -2,6 +2,75 @@
   "comments": [
     {
       "key": {
+        "uuid": "659d59e7_7a8739b7",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-13T10:22:19Z",
+      "side": 1,
+      "message": "option",
+      "range": {
+        "startLine": 22,
+        "startChar": 21,
+        "endLine": 22,
+        "endChar": 28
+      },
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99011012_d96baae2",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-13T10:22:19Z",
+      "side": 1,
+      "message": "\u0027sets\u0027 missing?",
+      "range": {
+        "startLine": 71,
+        "startChar": 13,
+        "endLine": 71,
+        "endChar": 16
+      },
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f13aa76e_7ee5ff13",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-13T10:22:19Z",
+      "side": 1,
+      "message": "cookie",
+      "range": {
+        "startLine": 72,
+        "startChar": 17,
+        "endLine": 72,
+        "endChar": 22
+      },
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "eb7f2913_79f967ec",
         "filename": "git-cookie-authdaemon",
         "patchSetId": 6
@@ -34,6 +103,52 @@
       "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cedcf12_dd56f205",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-13T10:22:19Z",
+      "side": 1,
+      "message": "drop?\n\nif you want to comment on this piece code, tell us what\u0027s up with it.",
+      "range": {
+        "startLine": 87,
+        "startChar": 4,
+        "endLine": 87,
+        "endChar": 8
+      },
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e15c5a1_8e7b1372",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 6
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1024147
+      },
+      "writtenOn": "2017-11-13T10:22:19Z",
+      "side": 1,
+      "message": "move this to the init of the IS_WINDOWS in l.47",
+      "range": {
+        "startLine": 164,
+        "startChar": 2,
+        "endLine": 164,
+        "endChar": 12
+      },
+      "revId": "dd7706018a009872f72d10d303a34537ed33a61c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
