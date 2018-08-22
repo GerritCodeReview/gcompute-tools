@@ -42,6 +42,7 @@ SUPPORTED_SCOPES = [
   'https://www.googleapis.com/auth/source.full_control',
   'https://www.googleapis.com/auth/source.read_write',
   'https://www.googleapis.com/auth/source.read_only',
+  'https://www.googleapis.com/auth/cloud-platform',
 ]
 COOKIE_JAR = None
 IS_WINDOWS = platform.system() == 'Windows'
