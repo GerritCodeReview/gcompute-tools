@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ac9997d9_578547b3",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2018-08-22T23:04:02Z",
+      "side": 1,
+      "message": "optional: I think it would be clearer to put this at the beginning of the list.",
+      "revId": "747cc2f8a1ecf9e2a651312e3ab2e5980e41a5c4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
