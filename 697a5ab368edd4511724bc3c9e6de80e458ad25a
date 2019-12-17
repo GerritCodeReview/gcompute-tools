@@ -46,6 +46,30 @@
       "revId": "697a5ab368edd4511724bc3c9e6de80e458ad25a",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c2fef219_673b0637",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2019-12-17T01:50:06Z",
+      "side": 1,
+      "message": "\u003e Commit messages should be in the past tense\n\nI mean \"Commit messages should be in the imperative mood\". You did the right thing, just correcting myself to avoid confusion when reading this later.",
+      "parentUuid": "19057338_c5d601bc",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 7
+      },
+      "revId": "697a5ab368edd4511724bc3c9e6de80e458ad25a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
