@@ -20,6 +20,8 @@ Adds a cookie to ~/.git-credential-cache/cookies and sets
 Git variable http.cookiefile to this path.
 """
 
+from __future__ import print_function
+
 import cookielib
 import os
 from subprocess import Popen, PIPE, check_call
