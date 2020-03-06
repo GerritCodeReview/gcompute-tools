@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1215f6_b4e318be",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2020-03-06T23:49:56Z",
+      "side": 1,
+      "message": "Perhaps:\n\nif sys.version_info[0] \u003e 2:\n  ... python 3 imports\nelse:\n  ... python 2 ...",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80b9092b_8b597c54",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2020-03-06T23:49:56Z",
+      "side": 1,
+      "message": "perhaps can simplify:\n\n avail \u003d set(map(lambda s: s.decode(\u0027utf-8\u0027), d.read().split()))",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "23a716a3_6fb738e7",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2020-03-06T23:49:56Z",
+      "side": 1,
+      "message": "Assume the reader is looking at this code from the future, and that Python 3 is the version they\u0027re familiar with.\n\nI think this is more readable without this comment.",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
