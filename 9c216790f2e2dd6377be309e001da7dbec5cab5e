@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1610d841_f6d12cd0",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1093166
+      },
+      "writtenOn": "2020-03-07T00:05:24Z",
+      "side": 1,
+      "message": "Done for both files.",
+      "parentUuid": "1f1215f6_b4e318be",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "80b9092b_8b597c54",
         "filename": "git-cookie-authdaemon",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "507728ff_0f337852",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1093166
+      },
+      "writtenOn": "2020-03-07T00:05:24Z",
+      "side": 1,
+      "message": "Done, simplified conversion to UTF-8 in both files.",
+      "parentUuid": "80b9092b_8b597c54",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "23a716a3_6fb738e7",
         "filename": "git-cookie-authdaemon",
         "patchSetId": 2
@@ -50,6 +86,24 @@
       "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21406326_c653e25c",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1093166
+      },
+      "writtenOn": "2020-03-07T00:05:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "23a716a3_6fb738e7",
+      "revId": "9c216790f2e2dd6377be309e001da7dbec5cab5e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
