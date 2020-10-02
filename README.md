@@ -84,7 +84,7 @@ ps -ef | grep git-cookie-authdaemon
    git commands will be run, for example in either `Command Prompt`
    or `Cygwin bash shell` under user `builder`.
 ```
-python git-cookie-authdaemon --nofork
+python git-cookie-authdaemon
 ```
 
 ### Launch at Windows boot
@@ -94,7 +94,7 @@ Windows boot. It can be done as a scheduled task. The following is an
 example on a Jenkins node. The setup is:
 
 1. The VM is created from GCE Windows Server 2012R2 image.
-1. Gygwin with SSHD is installed.
+1. Cygwin with SSHD is installed.
 1. The Jenkins master connects to the VM through SSH as `builder` account.
 
 How to create a scheduled task.
@@ -120,7 +120,7 @@ How to create a scheduled task.
 1. Add `builder` account to `Administrative Tools -> Local Security Policy ->
    Local Policies -> User Rights Assignment -> Log On As Batch Job`
 
-Note: /home/builder/git-cookie-authdaemon_wrapper.sh` below does
+Note: `/home/builder/git-cookie-authdaemon_wrapper.sh` below does
 
 1. Set HOMEPATH if it is not.
 2. Capture git-cookie-autodaemon.log stdout and stderr for debugging.

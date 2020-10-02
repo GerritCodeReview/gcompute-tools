@@ -177,28 +177,15 @@ def refresh_loop(scope, expires):
     expires = update_cookie(scope, retry=True) - REFRESH
 
 def main():
+  if '--nofork' not in sys.argv:
+    pid = subprocess.Popen([sys.executable] + sys.argv + ['--nofork']).pid
+    print('git-cookie-authdaemon PID %d' % (pid))
+    return
+
   scope = select_scope()
   configure_git()
 
   expires = update_cookie(scope, retry=False)
-
-  if '--nofork' not in sys.argv:
-    if IS_WINDOWS:
-      # os.fork() is not supported on Windows.
-      sys.stderr.write('Add \'--nofork\' on Windows\n')
-      sys.exit(1)
-
-    if os.fork() > 0:
-      sys.exit(0)
-
-    os.chdir('/')
-    os.setsid()
-    os.umask(0)
-
-    pid = os.fork()
-    if pid > 0:
-      print('git-cookie-authdaemon PID %d' % (pid))
-      sys.exit(0)
 
   refresh_loop(scope, expires)
 
