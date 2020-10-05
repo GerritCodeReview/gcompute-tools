@@ -33,6 +33,23 @@
       "message": "Look good to me. Please get Han-wen\u0027s approval. I am not authorized to give any code review store above 0.",
       "revId": "831819ae3f185b47db84b055f575507112d49252",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26bc83c3_857727d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2020-10-05T21:10:02Z",
+      "side": 1,
+      "message": "I assume this is tested (both with and without HOMEDRIVE set)?",
+      "revId": "831819ae3f185b47db84b055f575507112d49252",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
