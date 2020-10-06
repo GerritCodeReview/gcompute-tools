@@ -68,6 +68,23 @@
       "parentUuid": "26bc83c3_857727d9",
       "revId": "831819ae3f185b47db84b055f575507112d49252",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4419705_5c0f4359",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1115905
+      },
+      "writtenOn": "2020-10-06T07:17:21Z",
+      "side": 1,
+      "message": "Who/what sets the verified vote? Is there anything else I should do for this other than wait for another LGTM?",
+      "revId": "831819ae3f185b47db84b055f575507112d49252",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
