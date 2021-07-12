@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd8336bf_ec6e8e85",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2021-07-12T23:38:49Z",
+      "side": 1,
+      "message": "Not about this change: what would it take for gcompute-tools to work with Python 3?",
+      "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
