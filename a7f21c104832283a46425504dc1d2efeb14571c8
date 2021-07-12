@@ -16,6 +16,24 @@
       "message": "Typo in \u0027launchedd\u0027",
       "revId": "a7f21c104832283a46425504dc1d2efeb14571c8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cf97d7a_e049f91a",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2021-07-12T20:06:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d43f5e48_7433527f",
+      "revId": "a7f21c104832283a46425504dc1d2efeb14571c8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
