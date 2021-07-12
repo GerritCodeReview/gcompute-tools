@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d43f5e48_7433527f",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1070927
+      },
+      "writtenOn": "2021-07-12T18:01:35Z",
+      "side": 1,
+      "message": "Typo in \u0027launchedd\u0027",
+      "revId": "a7f21c104832283a46425504dc1d2efeb14571c8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
