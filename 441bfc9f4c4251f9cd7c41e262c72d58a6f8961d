@@ -16,6 +16,24 @@
       "message": "Not about this change: what would it take for gcompute-tools to work with Python 3?",
       "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69ed65f1_d86cc81b",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2021-07-13T00:05:50Z",
+      "side": 1,
+      "message": "I don\u0027t know. I wrote the current Windows section initially, so try to keep it up-to-date. I guess the most difficult thing is to make the scripts compatible to Python2.7 and Python3. Otherwise the transition would be problematic.",
+      "parentUuid": "dd8336bf_ec6e8e85",
+      "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
