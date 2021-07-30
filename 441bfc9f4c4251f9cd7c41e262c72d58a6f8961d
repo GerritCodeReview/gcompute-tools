@@ -38,6 +38,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "8bd8e201_1bb83f34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1070927
+      },
+      "writtenOn": "2021-07-30T21:16:27Z",
+      "side": 1,
+      "message": "I should\u0027ve pointed out earlier but you can always see the blocking labels in the submit requirements section: https://screenshot.googleplex.com/5aCaZNQW7WjDjhA\n\nI\u0027ve tested with both Python2.7 and Python3.9 on GCP Windows at this point.",
+      "parentUuid": "77e6b689_d820b5c6",
+      "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "dd8336bf_ec6e8e85",
         "filename": "README.md",
         "patchSetId": 3
