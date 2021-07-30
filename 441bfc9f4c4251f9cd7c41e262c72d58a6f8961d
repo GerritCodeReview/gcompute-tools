@@ -51,6 +51,24 @@
       "parentUuid": "dd8336bf_ec6e8e85",
       "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a44ae95_9284259f",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1070927
+      },
+      "writtenOn": "2021-07-30T20:33:04Z",
+      "side": 1,
+      "message": "Update on using python3. I tried with Python3.9 and it seems to work.\nI used the path from %LOCALAPPDATA% and hardcoded it in the script:\n\n/cygdrive/c/Users/builder/AppData/Local/Programs/Python/Python39/python $exe --nofork",
+      "parentUuid": "69ed65f1_d86cc81b",
+      "revId": "441bfc9f4c4251f9cd7c41e262c72d58a6f8961d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
