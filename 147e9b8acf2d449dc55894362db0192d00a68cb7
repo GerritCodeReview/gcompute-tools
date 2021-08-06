@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75b6cace_25c10530",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031452
+      },
+      "writtenOn": "2021-08-06T20:45:43Z",
+      "side": 1,
+      "message": "LGTM, although I have no permission to vote positively.",
+      "revId": "147e9b8acf2d449dc55894362db0192d00a68cb7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
