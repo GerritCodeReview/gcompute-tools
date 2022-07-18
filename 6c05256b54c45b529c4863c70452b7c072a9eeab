@@ -50,6 +50,23 @@
       "message": "Sorry for the slow review! Please vote on verified based on your testing.",
       "revId": "6c05256b54c45b529c4863c70452b7c072a9eeab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a72a7d1c_2d6a277b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1114885
+      },
+      "writtenOn": "2022-07-18T12:12:12Z",
+      "side": 1,
+      "message": "Tested both scripts with Python 3.9 and 3.10.",
+      "revId": "6c05256b54c45b529c4863c70452b7c072a9eeab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
