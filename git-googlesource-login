@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Copyright (C) 2012 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,18 +20,10 @@ Adds a cookie to ~/.git-credential-cache/cookies and sets
 Git variable http.cookiefile to this path.
 """
 
-from __future__ import print_function
-
 import os
 from subprocess import Popen, PIPE, check_call
 import sys
-
-if sys.version_info[0] > 2:
-  # Python 3 imports
-  import http.cookiejar as cookielib
-else:
-  # Python 2 imports
-  import cookielib
+import http.cookiejar as cookielib
 
 try:
   # We want to use raw_input in Python 2.
