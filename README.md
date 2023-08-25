@@ -156,3 +156,12 @@ C:\Users\builder\.gitconfig contains the following section
 [http]
         cookiefile = C:\\Users\\builder\\.git-credential-cache\\cookie
 ```
+
+## Using credentials from Google Cloud CLI
+
+Use the `--gcloud` or `--adc` flags with the `git-cookie-authdaemon` to retrieve access tokens from the Google Cloud CLI instead of the GCE metadata server. This is useful in scenarios where end-user credentials may be preferred over service account identities e.g. end-user interaction with development tools in a Cloud Workstations environment.
+
+The `--gcloud` flag retrieves credentials using [`gcloud auth print-access-token`](https://cloud.google.com/sdk/gcloud/reference/auth/print-access-token) and the `--adc` flag will retrieve [Application Default Credentials](https://cloud.google.com/docs/authentication/application-default-credentials) using [`gcloud auth application-default print-access-token`](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/print-access-token).
+
+Both `--gcloud` and `--adc` flags use the `gcloud` command and depend on the Google Cloud CLI being [installed](https://cloud.google.com/sdk/docs/install-sdk).
+

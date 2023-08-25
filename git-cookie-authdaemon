@@ -20,6 +20,8 @@ Git config variable http.cookiefile is updated.
 
 Runs only on Google Compute Engine (GCE). On GCE Windows '--nofork' option
 is needed. '--debug' option is available.
+
+Use the '--gcloud' or '--adc' option to retrieve access tokens from gcloud instead of GCE metadata server.
 """
 
 from __future__ import print_function
@@ -107,6 +109,26 @@ def configure_git():
     'http.cookiefile', COOKIE_JAR
   ])
 
+def acquire_token_from_gcloud(retry, use_adc):
+  while True:
+    try:
+      cmd = ['gcloud', 'auth', 'print-access-token']
+      if use_adc:
+        cmd.insert(2, 'application-default')
+      p = subprocess.run(cmd, capture_output=True, text=True)
+      access_token = p.stdout.strip()
+      resp = urlopen(''.join([
+        'https://oauth2.googleapis.com/tokeninfo?access_token=',
+        access_token
+      ]))
+      token_info = json.loads(resp.read().decode('utf-8'))
+      token_info['access_token'] = access_token
+      return token_info
+    except:
+      if not retry:
+        raise
+    time.sleep(RETRY_INTERVAL)
+
 def acquire_token(scope, retry):
   while True:
     try:
@@ -119,7 +141,13 @@ def acquire_token(scope, retry):
 
 def update_cookie(scope, retry):
   now = int(time.time())
-  token = acquire_token(scope, retry)
+
+  use_gcloud = '--gcloud' in sys.argv
+  use_adc = '--adc' in sys.argv
+  if use_gcloud or use_adc:
+    token = acquire_token_from_gcloud(retry, use_adc)
+  else:
+    token = acquire_token(scope, retry)
   access_token = token['access_token']
   expires = now + int(token['expires_in'])  # Epoch in sec
 
@@ -177,7 +205,11 @@ def refresh_loop(scope, expires):
     expires = update_cookie(scope, retry=True) - REFRESH
 
 def main():
-  scope = select_scope()
+  # gcloud and adc variants don't use instance scopes
+  if '--gcloud' in sys.argv or '--adc' in sys.argv:
+    scope = None
+  else:
+    scope = select_scope()
   configure_git()
 
   expires = update_cookie(scope, retry=False)
