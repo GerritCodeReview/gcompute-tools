@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6d4f593_7177e3d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1165738
+      },
+      "writtenOn": "2023-08-29T19:20:24Z",
+      "side": 1,
+      "message": "Hi, looks like you\u0027ve reviewed previous changes to this repo. I added some functionality to fetch end-user credentials from gcloud which has been convenient when working with GOB from Cloud Workstations environments. Do you think this functionality could be useful for other users too? Worth submitting the changes? Please take a look when you have a chance and let me know if you have any feedback. Thanks!!",
+      "revId": "1dff5923e5967a51f7776e6e82218e835046289e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
