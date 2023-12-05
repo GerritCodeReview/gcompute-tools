@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "206a884e_d391dd8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1090005
+      },
+      "writtenOn": "2023-12-05T16:44:47Z",
+      "side": 1,
+      "message": "We need this change to land, so that the git-cookie-authdaemon can run on our gcloud vms that don\u0027t have python added as an alias for python3.\n\nWe can work around the problem by patching the scripts locally with this change until this CL lands.",
+      "revId": "cae1a0ddf7837e9614a21b026589d8cc6e6fb44d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
