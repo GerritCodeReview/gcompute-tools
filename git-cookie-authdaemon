@@ -47,7 +47,9 @@ else:
 REFRESH = 25  # seconds remaining when starting refresh
 RETRY_INTERVAL = 5 # seconds between retrying a failed refresh
 
-META_URL = 'http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/'
+META_HOST = os.getenv('GCE_METADATA_HOST', 'metadata.google.internal')
+META_PATH = '/computeMetadata/v1/instance/service-accounts/default/'
+META_URL = 'http://{}{}'.format(META_HOST, META_PATH)
 SUPPORTED_SCOPES = [
   'https://www.googleapis.com/auth/cloud-platform',
   'https://www.googleapis.com/auth/gerritcodereview',
