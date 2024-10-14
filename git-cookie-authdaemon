@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Copyright (C) 2012 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,27 +22,19 @@ Runs only on Google Compute Engine (GCE). On GCE Windows '--nofork' option
 is needed. '--debug' option is available.
 """
 
-from __future__ import print_function
+from urllib.error import HTTPError
+from urllib.error import URLError
+from urllib.request import urlopen, Request
 
 import atexit
 import contextlib
+import http.cookiejar as cookielib
 import json
 import os
 import platform
 import subprocess
 import sys
 import time
-
-if sys.version_info[0] > 2:
-  # Python 3 imports
-  from urllib.request import urlopen, Request
-  from urllib.error import URLError
-  from urllib.error import HTTPError
-  import http.cookiejar as cookielib
-else:
-  # Python 2 imports
-  from urllib2 import urlopen, Request, HTTPError, URLError
-  import cookielib
 
 REFRESH = 25  # seconds remaining when starting refresh
 RETRY_INTERVAL = 5 # seconds between retrying a failed refresh
