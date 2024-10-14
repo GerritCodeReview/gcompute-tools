@@ -33,16 +33,11 @@ import subprocess
 import sys
 import time
 
-if sys.version_info[0] > 2:
-  # Python 3 imports
-  from urllib.request import urlopen, Request
-  from urllib.error import URLError
-  from urllib.error import HTTPError
-  import http.cookiejar as cookielib
-else:
-  # Python 2 imports
-  from urllib2 import urlopen, Request, HTTPError, URLError
-  import cookielib
+# Python 3 imports
+from urllib.request import urlopen, Request
+from urllib.error import URLError
+from urllib.error import HTTPError
+import http.cookiejar as cookielib
 
 REFRESH = 25  # seconds remaining when starting refresh
 RETRY_INTERVAL = 5 # seconds between retrying a failed refresh
