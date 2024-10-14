@@ -18,6 +18,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d35c10e1_152dc7e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1076693
+      },
+      "writtenOn": "2024-10-14T15:28:14Z",
+      "side": 1,
+      "message": "I don\u0027t think this is controversial nowadays. Python2 has been EOL\u0027ed for almost five years at this point :P\n\nUpdated the other file. We don\u0027t use it, so I didn\u0027t notice that it needs updating as well. Thanks for pointing it out.",
+      "parentUuid": "0c533c09_cd5b0e72",
+      "revId": "4b846fcd5b800d54600e6c7d075826e90ed57cb2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f75e0379_5c9ae54d",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-10-14T14:43:10Z",
       "side": 1,
       "message": "Since we\u0027re assuming python3, this part can be cleaned up.",
+      "revId": "4b846fcd5b800d54600e6c7d075826e90ed57cb2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b936d319_3b1953cf",
+        "filename": "git-cookie-authdaemon",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1076693
+      },
+      "writtenOn": "2024-10-14T15:28:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f75e0379_5c9ae54d",
       "revId": "4b846fcd5b800d54600e6c7d075826e90ed57cb2",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
