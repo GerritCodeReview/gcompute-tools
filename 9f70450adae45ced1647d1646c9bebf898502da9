@@ -16,6 +16,24 @@
       "message": "Please mark verified to indicate you\u0027ve tested this and we can submit.\n\nThanks for your quick work!",
       "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f62201ef_1d4e632d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1076693
+      },
+      "writtenOn": "2024-10-14T16:59:14Z",
+      "side": 1,
+      "message": "This might be a stupid question, but how do I mark verified...?\n\nI did test locally and they both ran:\n\n```\n$ ./git-cookie-authdaemon \nerror: VM must have one of these scopes:\n\n  https://www.googleapis.com/auth/cloud-platform\n  https://www.googleapis.com/auth/gerritcodereview\n  https://www.googleapis.com/auth/source.full_control\n  https://www.googleapis.com/auth/source.read_write\n  https://www.googleapis.com/auth/source.read_only\n```\n\n```\n$ ./git-googlesource-login \nOpen https://www.googlesource.com/new-password ...\nPassword (under \u0027Login for Git\u0027): ^CTraceback (most recent call last):\n  File \"/usr/local/google/home/jianglai/gcompute-tools/./git-googlesource-login\", line 88, in \u003cmodule\u003e\n    main()\n  File \"/usr/local/google/home/jianglai/gcompute-tools/./git-googlesource-login\", line 83, in main\n    t \u003d input(\"Password (under \u0027Login for Git\u0027): \")\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n```",
+      "parentUuid": "0e4c512e_3553a43a",
+      "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
