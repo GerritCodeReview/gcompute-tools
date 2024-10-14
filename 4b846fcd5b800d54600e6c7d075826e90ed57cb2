@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c533c09_cd5b0e72",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2024-10-14T14:42:33Z",
+      "side": 1,
+      "message": "Yeah, I think this is the simple thing to do. It\u0027s controversial but it should do the trick.\n\nDo you want to do this to `git-googlesource-login` as well?",
+      "revId": "4b846fcd5b800d54600e6c7d075826e90ed57cb2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
