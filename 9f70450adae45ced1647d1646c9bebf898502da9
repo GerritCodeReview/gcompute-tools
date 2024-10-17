@@ -86,6 +86,24 @@
       "parentUuid": "5e5be886_6a0ba907",
       "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf40c546_41522b99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011842
+      },
+      "writtenOn": "2024-10-17T18:09:37Z",
+      "side": 1,
+      "message": "```\n+ python /tmpfs/src/gcompute-tools/git-cookie-authdaemon\nTraceback (most recent call last):\n  File \"/tmpfs/src/gcompute-tools/git-cookie-authdaemon\", line 25, in \u003cmodule\u003e\n    from urllib.error import HTTPError\nImportError: No module named error\n```\n\nSo I think that build needs to change to use `python3` instead. Perhaps we could make the program reexec with python3 when run with python2?",
+      "parentUuid": "5e5be886_6a0ba907",
+      "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [
