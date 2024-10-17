@@ -104,6 +104,24 @@
       "parentUuid": "5e5be886_6a0ba907",
       "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1e99a5b_1c58c764",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1076693
+      },
+      "writtenOn": "2024-10-17T18:21:50Z",
+      "side": 1,
+      "message": "I believe the gbmc team is working on a rollback. But people really should be moving off python2 at this point. Things will keep breaking if you use python2.",
+      "parentUuid": "cf40c546_41522b99",
+      "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [
