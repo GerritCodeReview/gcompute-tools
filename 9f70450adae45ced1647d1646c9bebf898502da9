@@ -68,6 +68,24 @@
       "message": "Causing presubmit issues for gbmc team\nhttps://fusion2.corp.google.com/ci/kokoro/prod:gbmc%2Ffirmware-build%2Ffirmware%2Fgerrit/activity/6dcd28d6-616f-467e-b35d-7e1218a05932/summary",
       "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ce6d862_4045b53e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3692405
+      },
+      "writtenOn": "2024-10-17T18:05:59Z",
+      "side": 1,
+      "message": "Not to pile on but rather to note that this isn\u0027t isolated to gbmc: this also broke the GPINS builds (b/374098934, etc)",
+      "parentUuid": "5e5be886_6a0ba907",
+      "revId": "9f70450adae45ced1647d1646c9bebf898502da9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [
